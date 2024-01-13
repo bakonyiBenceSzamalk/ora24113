@@ -93,6 +93,7 @@ article img{
 
 article li{
     list-style-type: square;
+    list-style-position: inside;
 }
 
 aside {
@@ -105,4 +106,30 @@ footer{
     color: white;
     background-color: grey;
     padding: 10px;
+}
+
+@media only screen and (max-width: 700px){
+    main {
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-areas:
+            "h"
+            "ar"
+            "as"
+            "f";
+    }
+}
+
+table{
+    border: white 1px solid;
+    border-collapse: collapse;
+    color: white;    
+}
+
+td, th{
+    padding: 5px;
+}
+
+tr:nth-child(even){
+    background-color: rgb(92, 92, 92);
 }
